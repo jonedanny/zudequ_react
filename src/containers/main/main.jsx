@@ -1,16 +1,21 @@
 import React, {Component} from 'react';
 import Header from '../../components/header/header';
+import LeaseDynamic from '../../components/leaseDynamic/leaseDynamic';
+import Encyclopedias from '../../components/cncyclopedias/cncyclopedias';
+import Footer from '../../components/footer/footer'
 
-export default class Main extends Component {
+class Main extends Component {
     render () {
         return (
             <div className="container">
-                <Header/>
+                <Header />
                 <div className="main-con">
-
+                    <LeaseDynamic />
+                    <Encyclopedias />
                 </div>
-                <div className="footer"></div>
+                <Footer />
             </div>
         )
     }
 }
+export default Main;

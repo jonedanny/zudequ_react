@@ -7,6 +7,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import {HashRouter, Switch, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';
+import './assets/css/index.less';
 
 // 引入需要的组件
 import Register from './containers/register/register';

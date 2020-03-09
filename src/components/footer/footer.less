@@ -1,0 +1,69 @@
+section.footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--black);
+    overflow: hidden;
+    position: relative;
+    > div:not(.copy-right) {
+        width: 1020px;
+        margin: 40px auto;
+        .company-des {
+            color: var(--gray);
+            width: 51%;
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 23px;
+                margin: 0;
+                letter-spacing: 0.1em;
+            }
+        }
+        .contact-us {
+            width: 24%;
+            text-align: left;
+            h2 {
+                font-size: 18px;
+                color: var(--gray);
+            }
+            p {
+                color: var(--white);
+                font-weight: bold;
+                margin: 20px 0 40px 0;
+            }
+            p.hot-line {
+                font-size: 24px;
+            }
+            p.address {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .erweima {
+            width: 140px;
+            height: 180px;
+            padding: 0px;
+            text-align: center;
+            p {
+                margin: 0;
+                color: var(--white);
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .copy-right {
+        font-size: 14px;
+        color: var(--white);
+        background-color: var(--deepBlack);
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
