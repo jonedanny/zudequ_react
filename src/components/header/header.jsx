@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from '../../assets/imgs/logo.png';
 import './header.less';
 import Navigate from '../navigate/navigate';
-import Banner from '../banner/banner'
+
 
 class Header extends Component {
 
@@ -15,7 +15,6 @@ class Header extends Component {
                     </p>
                     <div className="nav-container"><Navigate /></div>
                 </div>
-                <div className="banner-container"><Banner /></div>
             </section>
         )
     }

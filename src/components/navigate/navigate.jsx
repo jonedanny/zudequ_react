@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import './navigate.less';
 import {
     HomeOutlined,
@@ -21,10 +22,10 @@ class Navigation extends Component {
     render() {
         return (
             <div className="flex-between">
-                <p onClick={this.handleClick.bind(this, 'index')}><HomeOutlined /> 首页</p>
-                <p onClick={this.handleClick.bind(this, 'product')}><AppstoreOutlined /> 商品</p>
-                <p onClick={this.handleClick.bind(this, 'help')}><CommentOutlined /> 帮助</p>
-                <p onClick={this.handleClick.bind(this, 'about_us')}><TeamOutlined /> 关于我们</p>
+                <Link to={`/`} onClick={this.handleClick.bind(this, 'index')}><HomeOutlined /> 首页</Link >
+                <Link to={`/products`} onClick={this.handleClick.bind(this, 'products')}><AppstoreOutlined /> 商品</Link >
+                <Link to={`/help`} onClick={this.handleClick.bind(this, 'help')}><CommentOutlined /> 帮助</Link >
+                <Link to={`/about_us`} onClick={this.handleClick.bind(this, 'about_us')}><TeamOutlined /> 关于我们</Link >
             </div>
         )
     }

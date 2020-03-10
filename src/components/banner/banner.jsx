@@ -8,10 +8,12 @@ class Banner extends Component {
 
     render() {
         return (
-            <Carousel effect="fade" autoplay>
-                <div className="img"><img src={banner1} alt="banner1" className="logo-img" /></div>
-                <div className="img"><img src={banner2} alt="banner2" className="logo-img" /></div>
-            </Carousel>
+            <div className="banner-container">
+                <Carousel effect="fade" autoplay>
+                    <div className="img"><img src={banner1} alt="banner1" className="logo-img" /></div>
+                    <div className="img"><img src={banner2} alt="banner2" className="logo-img" /></div>
+                </Carousel>
+            </div>
         )
     }
 
